@@ -1,0 +1,225 @@
+@api = http://localhost:3020/api/v1/prod-serv
+#@api = http://187.229.22.99:8010/api/v1/prod-serv
+### GET
+GET {{api}}
+### GET ITEM
+GET {{api}}?6356ce422a64ff647ddb9b24
+### GET ITEM
+GET {{api}}?precios.detail_row.Activo=S
+### GET ITEM
+GET {{api}}?FechaExpiraIni={"$gte":"2023-01-01T07:00:00.000Z"}&FechaExpiraFin={"$lte":"2024-12-31T07:00:00.000Z"}
+### POST
+POST {{api}}
+### PUT
+PUT {{api}}/6356ce422a64ff647ddb9b24
+
+Content-Type: application/json
+
+{
+  "_id": "6356ce422a64ff647ddb9b24",
+  "IdInstitutoOK": "9001",
+  "IdListaOK": "9001-000000000001",
+  "IdListaBK": "PUBLICO-GENERAL",
+  "DesLista": "Público Actualizado en General",
+  "FechaExpiraIni": "2023-01-01T07:00:00.000Z",
+  "FechaExpiraFin": "2025-12-31T07:00:00.000Z",
+  "IdTipoListaOK": "IdTipoListaPrecios-IdGeneral",
+  "IdTipoGeneraListaOK": "IdTipoGeneraLista-IdManual",
+  "IdTipoFormulaOK": "",
+  "precios": [
+      {
+        "detail_row": {
+          "Activo": "S",
+          "Borrado": "N",
+          "detail_row_reg": [
+            {
+              "FechaReg": "2022-04-30T00:00:00.628Z",
+              "UsuarioReg": "FIBARRAC"
+            }
+          ]
+        },
+        "IdProdServOK": "9001-000000000001",
+        "IdPresentaOK": "9001-000000000001-000000001",
+        "IdTipoFormulaOK": "",
+        "Formula": "",
+        "CostoIni": 15234.55,
+        "CostoFin": 25600,
+        "Precio": 35605.5
+      },
+      {
+        "detail_row": {
+          "Activo": "S",
+          "Borrado": "N",
+          "detail_row_reg": [
+            {
+              "FechaReg": "2022-04-30T00:00:00.628Z",
+              "UsuarioReg": "FIBARRAC"
+            }
+          ]
+        },
+        "IdProdServOK": "9001-000000000001",
+        "IdPresentaOK": "9001-000000000001-000000002",
+        "IdTipoFormulaOK": "",
+        "Formula": "",
+        "CostoIni": 20134.55,
+        "CostoFin": 30999,
+        "Precio": 40010.33
+      },
+      {
+        "detail_row": {
+          "Activo": "S",
+          "Borrado": "N",
+          "detail_row_reg": [
+            {
+              "FechaReg": "2022-04-30T00:00:00.628Z",
+              "UsuarioReg": "FIBARRAC"
+            }
+          ]
+        },
+        "IdProdServOK": "9001-000000000001",
+        "IdPresentaOK": "9001-000000000001-000000003",
+        "IdTipoFormulaOK": "",
+        "Formula": "",
+        "CostoIni": 18666.55,
+        "CostoFin": 23395.13,
+        "Precio": 38900.99
+      },
+      {
+        "detail_row": {
+          "Activo": "S",
+          "Borrado": "N",
+          "detail_row_reg": [
+            {
+              "FechaReg": "2022-04-30T00:00:00.628Z",
+              "UsuarioReg": "FIBARRAC"
+            }
+          ]
+        },
+        "IdProdServOK": "9001-000000000002",
+        "IdPresentaOK": "9001-000000000002-000000001",
+        "IdTipoFormulaOK": "",
+        "Formula": "",
+        "CostoIni": 5000.42,
+        "CostoFin": 7339.15,
+        "Precio": 15049.91
+      },
+      {
+        "detail_row": {
+          "Activo": "S",
+          "Borrado": "N",
+          "detail_row_reg": [
+            {
+              "FechaReg": "2022-04-30T00:00:00.628Z",
+              "UsuarioReg": "FIBARRAC"
+            }
+          ]
+        },
+        "IdProdServOK": "9001-000000000002",
+        "IdPresentaOK": "9001-000000000002-000000002",
+        "IdTipoFormulaOK": "",
+        "Formula": "",
+        "CostoIni": 4200.33,
+        "CostoFin": 6139.22,
+        "Precio": 12149.17
+      },
+      {
+        "detail_row": {
+          "Activo": "S",
+          "Borrado": "N",
+          "detail_row_reg": [
+            {
+              "FechaReg": "2022-04-30T00:00:00.628Z",
+              "UsuarioReg": "FIBARRAC"
+            }
+          ]
+        },
+        "IdProdServOK": "9001-000000000002",
+        "IdPresentaOK": "9001-000000000002-000000003",
+        "IdTipoFormulaOK": "",
+        "Formula": "",
+        "CostoIni": 3600.33,
+        "CostoFin": 5500.22,
+        "Precio": 10987.89
+      }
+    ],
+  "roles": [],
+  "negocios": [],
+  "promociones": [],
+  "detail_row": {
+    "Activo": "S",
+    "Borrado": "N",
+    "detail_row_reg": [
+      {
+        "FechaReg": "2024-10-17T00:00:00.000Z",
+        "UsuarioReg": "TestUser"
+      }
+    ]
+  }
+}
+
+
+# POST
+# {
+#   "IdInstitutoOK": "9001",
+#   "IdListaOK": "9001-000000000001",
+#   "IdListaBK": "PUBLICO-GENERAL",
+#   "DesLista": "Publico en General",
+#   "FechaExpiraIni": "2023-01-01T07:00:00.000Z",
+#   "FechaExpiraFin": "2024-12-31T07:00:00.000Z",
+#   "IdTipoListaOK": "IdTipoListaPrecios-IdGeneral",
+#   "IdTipoGeneraListaOK": "IdTipoGeneraLista-IdManual",
+#   "IdTipoFormulaOK": "",
+#   "precios": [
+#     {
+#       "IdProdServOK": "9001-000000000001",
+#       "IdPresentaOK": "9001-000000000001-000000001",
+#       "IdTipoFormulaOK": "",
+#       "Formula": "",
+#       "CostoIni": 15234.55,
+#       "CostoFin": 25600,
+#       "Precio": 35605.5,
+#       "detail_row": {
+#         "Activo": "S",
+#         "Borrado": "N",
+#         "detail_row_reg": [
+#           {
+#             "FechaReg": "2022-04-30T00:00:00.628Z",
+#             "UsuarioReg": "FIBARRAC"
+#           }
+#         ]
+#       }
+#     },
+#     {
+#       "IdProdServOK": "9001-000000000002",
+#       "IdPresentaOK": "9001-000000000002-000000001",
+#       "IdTipoFormulaOK": "",
+#       "Formula": "",
+#       "CostoIni": 5000.42,
+#       "CostoFin": 7339.15,
+#       "Precio": 15049.91,
+#       "detail_row": {
+#         "Activo": "S",
+#         "Borrado": "N",
+#         "detail_row_reg": [
+#           {
+#             "FechaReg": "2022-04-30T00:00:00.628Z",
+#             "UsuarioReg": "FIBARRAC"
+#           }
+#         ]
+#       }
+#     }
+#   ],
+#   "roles": [],
+#   "detail_row": {
+#     "Activo": "S",
+#     "Borrado": "N",
+#     "detail_row_reg": [
+#       {
+#         "FechaReg": "2022-04-30T00:00:00.628Z",
+#         "UsuarioReg": "FIBARRAC"
+#       }
+#     ]
+#   },
+#   "negocios": [],
+#   "promociones": []
+# }
